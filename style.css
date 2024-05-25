@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .nav {
+    background-color: palevioletred;
+    width: 100%;
+  }
+  html {
+    scroll-behavior: smooth;
+    transition: 0.3s;
+  }
+  .row .col-md-4 a img {
+    width: 90px;
+    margin: 10px 0px 0px 0px;
+  }
+  .container .row .col-md-8 ul {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .container .row .col-md-8 ul li {
+    display: inline-block;
+  }
+  .container .row .col-md-8 ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+    text-shadow: rgb(80, 74, 74) 1px 1px;
+    line-height: 70px;
+    position: relative;
+    z-index: 1;
+  }
+  .container .row .col-md-8 ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+  .container .row .col-md-8 ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    transition: 0.6s;
+    z-index: -1;
+  }
+  
+  .container .row .col-md-8 ul li a:hover::before {
+    width: 70%;
+  }
+  
+  /* -===============baner============== */
+  /* -===============baner============== */
+  .baner {
+    background-image: url("https://images.yodibujo.es/_uploads/wallpaper/18339_capture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0px;
+  }
+  .fl::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .baner .container .row .col-md-12 h2 {
+    color: palevioletred;
+    text-shadow: black 1px 1px;
+  }
+  .baner .container .row .col-md-12 p {
+    color: black;
+    width: 720px;
+    margin: auto;
+    padding: 50px 0px;
+  }
+  .baner .container .row .col-md-12 a:hover {
+    color: black;
+  }
+  .baner .container .row .col-md-12 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: white;
+    border: #337ab7;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  }
+  .baner .container .row .col-md-12 a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 10px 0px 0px 10px;
+    z-index: -1;
+  }
+  .baner .container .row .col-md-12 a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 0px 10px 10px 0px;
+    z-index: -1;
+  }
+  .baner .container .row .col-md-12 a:hover::after {
+    width: 50.1%;
+  }
+  .baner .container .row .col-md-12 a:hover::before {
+    width: 50.1%;
+  }
+  
+  /* ==============teem=========== */
+  /* ==============teem=========== */
+  .teem {
+    background-color: rgb(238, 155, 169);
+    width: 100%;
+    height: auto;
+  }
+  .teem .container .row h1 {
+    padding: 100px 0px 30px 0px;
+  }
+  .teem .container .row .col-md-4 button {
+    background-color: #337ab7;
+    padding: 8px 10px;
+    border: #337ab7;
+    color: white;
+    border-radius: 6px;
+    margin: 10px 0px 50px 0px;
+    position: relative;
+    z-index: 1;
+  }
+  .teem .container .row .col-md-4 button:hover {
+    color: black;
+  }
+  .teem .container .row .col-md-4 button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 6px;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .teem .container .row .col-md-4 button:hover::before {
+    width: 100%;
+  }
+  
+  .teem .container .row .col-md-4 p {
+    width: 200px;
+    margin: auto;
+  }
+  /* .teem .container .row .col-md-4 .wt{ */
+  /* width: 200px; */
+  /* } */
+  /* .teem .container .row .col-md-4 { */
+  /* margin-right: 0px; */
+  /* } */
+  
+  .abaout {
+    background-color: pink;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .abaout .container .row h1 {
+    text-align: center;
+  }
+  
+  .abaout .container .row .col-md-6 .img1 {
+    float: left;
+    width: 2000x;
+    margin: 0px 40px 50px 0px;
+  }
+  .abaout .container .row .col-md-6 .sid {
+    float: left;
+    width: 200px;
+  }
+  .abaout .container .row .col-md-6 .para {
+    display: inline-block;
+  }
+  
+  .abaout .container .row .col-md-6 .dib {
+    font-size: 20px;
+  }
+  /* =====================contact================= */
+  /* /=====================contact================= */
+  
+  .contact {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .contact .container .row h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+  }
+  .contact .container .row .col-md-6 form a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0062d3;
+    padding: 15px 20px;
+    border: #0062d3;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .contact .container .row .col-md-6 form a:hover {
+    color: black;
+
+  }
+  
+  .contact .container .row .col-md-6 form a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    z-index: -1;
+    background-color: #bac1f3;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .contact .container .row .col-md-6 form a:hover::before {
+    width: 100%;
+  }
+  
+  .contact .container .row .col-md-6 input {
+    padding: 5px 340px 5px 10px;
+  }
+  .contact .container .row .col-md-6 textarea {
+    padding: 5px 340px 5px 10px;
+  }
+  
+  .footer {
+    background-color: rgb(238, 155, 169);
+    width: 100%;
+    height: 100px;
+  }
+  .footer .container {
+    height: 100px;
+  }
+  .footer .container .row .col-md-12 p {
+    width: 280px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 8rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.7rem;
+  }  
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
